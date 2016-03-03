@@ -1,5 +1,5 @@
 import static org.junit.Assert.assertEquals;
-
+import org.junit.Test;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -38,10 +38,9 @@ public class Mergesort {
             }
         }//end-while 迴圈結束, 會有左 or 右其一的數列, 尚未把數放入merged
         
-        /**
-         * 以下是將 左 or 右其一尚未放入merged的數加入（兩個迴圈只會執行其中一個）
-         * 由於左右各半原先都是"由更小的數列合併完且已經排序好的數列", 所以只要依序放入即可
-         */
+        
+        /* 以下是將 左 or 右其一尚未放入merged的數加入（兩個迴圈只會執行其中一個）
+         * 由於左右各半原先都是"由更小的數列合併完且已經排序好的數列", 所以只要依序放入即可*/
         while (leftPtr < left.size()) {
             merged.add(left.get(leftPtr));
             leftPtr++;
@@ -55,7 +54,7 @@ public class Mergesort {
         return merged;
     }
 
-    @org.junit.Test
+    @Test
     public void testMergesort() {
         List<Integer> numbers = Arrays.asList(3, 2, 7, 4, 12, 8, 5);
         List<Integer> expected = Arrays.asList(2, 3, 4, 5, 7, 8, 12);

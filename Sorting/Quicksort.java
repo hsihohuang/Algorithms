@@ -1,6 +1,6 @@
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertArrayEquals;
-
+import org.junit.Test;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -80,7 +80,7 @@ public class Quicksort {
 	}
 	
 	
-	@org.junit.Test
+	@Test
 	public void testQuicksort() {
 		int[] arrNumbers =  {4, 1, 5, 7, 15, 12};
 		int[] arrExpected =  {1, 4, 5, 7, 12, 15};
