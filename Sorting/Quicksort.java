@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * @author HsiHo Huang
- * @version 1.2
+ * @version 1.3
  */
 public class Quicksort {
 	
@@ -29,7 +29,6 @@ public class Quicksort {
 	}
 	
 	public static int partition(int[] arr, int left, int right){
-		int tmp;
 		int pivot = arr[(left + right) / 2];//選中間的數當作pivot
 
 		while (left <= right) {
@@ -38,9 +37,7 @@ public class Quicksort {
 			while (arr[right] > pivot)//在右半邊找到小於pivot的數字, 此數應該被放到左半邊
 				right--;
 			if (left <= right) {//交換該被放到另一邊的值, 交換完再繼續找 
-				tmp = arr[left];
-				arr[left] = arr[right];
-				arr[right] = tmp;
+				swap(arr, left, right);
 
 				left++;
 				right--;
@@ -48,6 +45,12 @@ public class Quicksort {
 		};
 		return left;
 	}
+
+	public static void swap(int[] arr, int i, int j){
+        int tmp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = tmp;
+    }
 	
 	
 	/**

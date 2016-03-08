@@ -10,13 +10,13 @@ import java.util.List;
  */
 public class Mergesort {
 	//將數列一直對半切割, 切到最小單位(單一元素), 再左右合併回去, 合併的同時做排序
-	public static List<Integer> mergesort(List<Integer> values) {
-        if (values.size() < 2) { 
-            return values;
+	public static List<Integer> mergesort(List<Integer> numbers) {
+        if (numbers.size() < 2) { 
+            return numbers;
         }
         //分成兩半, 左半邊和右半邊
-        List<Integer> leftHalf = values.subList(0, values.size() / 2);
-        List<Integer> rightHalf = values.subList(values.size() / 2, values.size());
+        List<Integer> leftHalf = numbers.subList(0, numbers.size() / 2);
+        List<Integer> rightHalf = numbers.subList(numbers.size() / 2, numbers.size());
 
         return merge(mergesort(leftHalf), mergesort(rightHalf));
     }
