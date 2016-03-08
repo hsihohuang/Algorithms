@@ -11,6 +11,7 @@ import java.util.List;
 public class Mergesort {
 	//將數列一直對半切割, 切到最小單位(單一元素), 再左右合併回去, 合併的同時做排序
 	public static List<Integer> mergesort(List<Integer> numbers) {
+        //若只有一個元素，代表已經排序好了
         if (numbers.size() < 2) { 
             return numbers;
         }
