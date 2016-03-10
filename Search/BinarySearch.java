@@ -8,7 +8,7 @@ import org.junit.Test;
  */
 public class BinarySearch {
 	/**
-	 * 迴圈版本的二元搜尋
+	 * Iterative version of binary search algorithm
 	 * @param arr 要被搜尋的陣列，必須是已排序好的
 	 * @param target 要被搜尋的目標值
 	 * @return boolean 是否有找到。也可改成回傳int 該目標值的index，否則回傳-1
@@ -30,7 +30,7 @@ public class BinarySearch {
 	}
 	
 	/**
-	 * 遞迴版本的二元搜尋(沒有自訂搜尋範圍)
+	 * Recursive version of binary search algorithm(沒有自訂搜尋範圍)
 	 * @param arr 要被搜尋的陣列，必須是已排序好的
 	 * @param target 要被搜尋的目標值
 	 * @return boolean 是否有找到。也可改成回傳int 該目標值的index，否則回傳-1
@@ -40,7 +40,7 @@ public class BinarySearch {
 	}
 	
 	/**
-	 * 遞迴版本的二元搜尋(自訂搜尋範圍)
+	 * Recursive version of binary search algorithm(自訂搜尋範圍)
 	 * @param arr 要被搜尋的陣列，必須是已排序好的
 	 * @param left 要被搜尋的範圍之開始的index
 	 * @param right  要被搜尋的範圍之結束的index
