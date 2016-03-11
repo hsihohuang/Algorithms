@@ -29,7 +29,6 @@ public class LinkedList<T> {
 	/**
 	 * 刪除節點
 	 * @param data 要刪除的資料值
-	 * @return Node<T> 鏈結串列的頭(起始的節點)
 	 */
 	public void deletNode(T data){
 		Node<T> current = head;
