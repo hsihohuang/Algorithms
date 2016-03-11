@@ -63,15 +63,15 @@ public class BinarySearch {
 	}
 	
 	@Test
-    public void testBinarySearch() {        
-        int[] arr =  {1, 2, 3, 5, 7, 14, 16, 20};
+	public void testBinarySearch() {        
+		int[] arr =  {1, 2, 3, 5, 7, 14, 16, 20};
 		assertTrue(binarySearchIterative(arr, 14));
-        assertFalse(binarySearchIterative(arr, 4));
-        assertFalse(binarySearchIterative(arr, -1));
-        
-        assertTrue(binarySearchRecursive(arr, 14));
-        assertFalse(binarySearchRecursive(arr, 4));
-        assertFalse(binarySearchRecursive(arr, -1));
-    }
+		assertFalse(binarySearchIterative(arr, 4));
+		assertFalse(binarySearchIterative(arr, -1));
+
+		assertTrue(binarySearchRecursive(arr, 14));
+		assertFalse(binarySearchRecursive(arr, 4));
+		assertFalse(binarySearchRecursive(arr, -1));
+	}
 
 }

@@ -1,9 +1,6 @@
 import static org.junit.Assert.*;
-
 import org.junit.After;
-import org.junit.AfterClass;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
 
@@ -37,8 +34,14 @@ public class LinkedListTest {
 	}
 
 	@Test
-	public void test() {
+	public void testAppendToTail() {
 		assertEquals("2 6 8 5 -5 0 ", linkedList.toString());
+	}
+	
+	@Test
+	public void testDeletNode() {
+		assertEquals("2 6 5 -5 0 ", LinkedListNode.deletNode(linkedList,8).toString());
+		assertEquals("6 5 -5 0 ", LinkedListNode.deletNode(linkedList,2).toString());
 	}
 
 }
