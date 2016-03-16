@@ -1,7 +1,7 @@
 package Generics;
 
 /**
- * A generic singly LinkedList<T>
+ * Implement a generic singly LinkedList<T>
  * @author HsiHo Huang
  * @version 1.1
  * 
@@ -31,6 +31,8 @@ public class LinkedList<T> {
 	 * @param data 要刪除的資料值
 	 */
 	public void deletNode(T data){
+		if(head == null) return;
+
 		Node<T> current = head;
 		
 		if(current.data == data){//先檢查串列的頭，是否就是要被刪除的節點

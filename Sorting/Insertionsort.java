@@ -11,7 +11,7 @@ public class Insertionsort {
 	 * 
 	 * 實作的概念，要被排序的陣列arr會被分成三部分：
 	 * (1)要被插入的值:insertValue (2)insertValue的左半邊:已經排序好的部分 (3)insertValue的右半邊:未排序好的部分
-	 * (雖然insertValue也算是尚未排序的那一部份，但為了方便說明，把它拆開來說)
+	 * (雖然insertValue也算是尚未排序的那一部份，但為了方便說明，把它拆開來說)<br>
 	 * 而insertValue從arr位置1的值開始(第0個因為只有一個元素，代表已排序好)一一被插入已經排序好的部分，
 	 * 插入之後，再從右半邊未排序的部分拿出值當作insertValue繼續插入左半邊排序好的部分，重複此步驟直到最後完成排序。
 	 * 

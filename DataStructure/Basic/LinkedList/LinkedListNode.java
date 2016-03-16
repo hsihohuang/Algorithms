@@ -1,6 +1,6 @@
 
 /**
- * A basic singly linked list
+ * Implement a basic singly linked list
  * 
  * 一個單向鏈結串列的節點，包含兩個部分
  * (1)儲存該節點的資料值或者顯示關於節點的資訊，(2)儲存下一個節點的位址

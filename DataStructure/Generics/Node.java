@@ -11,6 +11,9 @@ public class Node<T> {
 	protected T data;
 	protected Node<T> nextNode = null;
 	
+	public Node(){
+	}
+
 	public Node(T data){
 		this.data = data;
 	}
