@@ -14,15 +14,21 @@ package Generics;
 public class Queue<T> {
 	private Node<T> front, rear;
 	
+	/**
+     * Creates an empty Queue.
+     */
 	public Queue(){
 	}
 	
+	/**
+     * Creates a Queue and adds the specified data into this queue.
+     */
 	public Queue(T data){
 		this.enqueue(data);
 	}
 	
 	/**
-	 * Add data
+	 * Adds the specified data into this queue.
 	 * @param data 要加入的資料
 	 */
 	public void enqueue(T data){
@@ -39,8 +45,8 @@ public class Queue<T> {
 	}
 	
 	/**
-	 * Delete data
-	 * @return T 被刪除的資料
+	 * Deletes the front of this queue.
+	 * @return 被刪除的front資料
 	 */
 	public T dequeue(){
 		//判斷Queue是不是空的
@@ -53,8 +59,8 @@ public class Queue<T> {
 	}
 	
 	/**
-	 * 看front節點的資料
-	 * @return String front節點的資料值
+	 * Peeks the front of this queue.
+	 * @return 回傳front節點資料值的字串，若queue為空則回傳"It's empty!"
 	 */
 	public String peek(){  
 		if(front != null)
