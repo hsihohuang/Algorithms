@@ -1,6 +1,6 @@
 #### 測試檔testFile/strGraph.txt之圖形
 
-![testFile/strGraph.txt之圖形](testGraph.png)
+<img src="testGraph.png" width="500">
 
 ### 讀檔建圖說明
 
