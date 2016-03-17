@@ -18,15 +18,15 @@ public class Graph<T> {
 	private List<Vertex<T>> vertices;
 	
 	/**
-     * Creates a Graph.
-     */
+	 * Creates a Graph.
+	 */
 	public Graph(){
 		vertices = new ArrayList<Vertex<T>>();
 	}
 	
 	/**
-     * Adds vertex into this Graph.
-     */
+	 * Adds vertex into this Graph.
+	 */
 	public void insertVertex(T d){
 		vertices.add(new Vertex<T>(d));
 	}
