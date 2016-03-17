@@ -64,7 +64,7 @@ public class BinarySearch {
 	}
 	
 	@Test
-    public void testBinarySearch() {        
+	public void testBinarySearch() {        
 		int[] arr =  {1, 2, 3, 5, 7, 14, 16, 20};
 		assertTrue(binarySearchIterative(arr, 14));
 		assertFalse(binarySearchIterative(arr, 4));
