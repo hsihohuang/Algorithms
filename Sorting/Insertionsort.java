@@ -8,7 +8,7 @@ import static org.junit.Assert.assertArrayEquals;
 public class Insertionsort {	
 	/**
 	 * In-place version of insertionsort
-	 * 
+	 * <p>
 	 * 實作的概念，要被排序的陣列arr會被分成三部分：
 	 * (1)要被插入的值:insertValue (2)insertValue的左半邊:已經排序好的部分 (3)insertValue的右半邊:未排序好的部分
 	 * (雖然insertValue也算是尚未排序的那一部份，但為了方便說明，把它拆開來說)<br>

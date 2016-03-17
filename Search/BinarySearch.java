@@ -12,7 +12,7 @@ public class BinarySearch {
 	 * Iterative version of binary search algorithm
 	 * @param arr 要被搜尋的陣列，必須是已排序好的
 	 * @param target 要被搜尋的目標值
-	 * @return boolean 是否有找到。也可改成回傳int 該目標值的index，否則回傳-1
+	 * @return 回傳boolean直，代表是否有找到。也可改成回傳int 該目標值的index，否則回傳-1
 	 */
 	public boolean binarySearchIterative(int[] arr, int target){
 		//設定搜尋範圍
@@ -34,7 +34,7 @@ public class BinarySearch {
 	 * Recursive version of binary search algorithm(沒有自訂搜尋範圍)
 	 * @param arr 要被搜尋的陣列，必須是已排序好的
 	 * @param target 要被搜尋的目標值
-	 * @return boolean 是否有找到。也可改成回傳int 該目標值的index，否則回傳-1
+	 * @return 回傳boolean值，代表是否有找到。也可改成回傳int 該目標值的index，否則回傳-1
 	 */
 	public boolean binarySearchRecursive(int[] arr, int target){
 		return binarySearchRecursive(arr, 0, arr.length - 1 , target);
@@ -46,7 +46,7 @@ public class BinarySearch {
 	 * @param left 要被搜尋的範圍之開始的index
 	 * @param right  要被搜尋的範圍之結束的index
 	 * @param target 要被搜尋的目標值
-	 * @return boolean 是否有找到。也可改成回傳int 該目標值的index，否則回傳-1
+	 * @return 回傳boolean值，代表是否有找到。也可改成回傳int 該目標值的index，否則回傳-1
 	 */
 	public boolean binarySearchRecursive(int[] arr,int left,int right,int target){
 		//搜尋範圍開始的index大於結束的index -- 可能輸入錯誤或找不到目標值 -> 結束搜尋
@@ -64,12 +64,12 @@ public class BinarySearch {
 	}
 	
 	@Test
-	public void testBinarySearch() {        
+    public void testBinarySearch() {        
 		int[] arr =  {1, 2, 3, 5, 7, 14, 16, 20};
 		assertTrue(binarySearchIterative(arr, 14));
 		assertFalse(binarySearchIterative(arr, 4));
 		assertFalse(binarySearchIterative(arr, -1));
-
+		
 		assertTrue(binarySearchRecursive(arr, 14));
 		assertFalse(binarySearchRecursive(arr, 4));
 		assertFalse(binarySearchRecursive(arr, -1));
