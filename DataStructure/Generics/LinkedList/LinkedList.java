@@ -1,14 +1,23 @@
 package Generics;
 
 /**
- * Implement a generic singly LinkedList<T>
+ * A generic singly LinkedList<T>
+ * <p>
+ * 一個單向鏈結串列的節點，包含兩個部分<br>
+ * (1)儲存該節點的資料值或者顯示關於節點的資訊，(2)儲存下一個節點的位址<br>
+ * 單向連結串列只可向一個方向遍歷，且最後一個節點指向一個空值，代表串列結束。
+ * 
  * @author HsiHo Huang
  * @version 1.1
+ * @see {@link Node} 
  * 
  * @param <T> the type of the value
  */
 public class LinkedList<T> {
 	private Node<T> head;
+	
+	public LinkedList(){
+	}
 	
 	public LinkedList(T data){
 		head = new Node<T>(data);
@@ -32,9 +41,8 @@ public class LinkedList<T> {
 	 */
 	public void deletNode(T data){
 		if(head == null) return;
-
-		Node<T> current = head;
 		
+		Node<T> current = head;
 		if(current.data == data){//先檢查串列的頭，是否就是要被刪除的節點
 			head = head.nextNode;//若是，把head設定成head的下一個節點(作為該串列的新開頭)
 			return;

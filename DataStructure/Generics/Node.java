@@ -3,7 +3,7 @@ package Generics;
 /**
  * A generic class Node<T>
  * @author HsiHo Huang
- * @version 1.1
+ * @version 1.2
  * 
  * @param <T> the type of the value
  */
