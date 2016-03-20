@@ -5,7 +5,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 /**
- * Junit 4 test case for singly LinkedList<T>
+ * JUnit 4 test case for singly LinkedList<T>
  * @author HsiHo Huang
  * @version 1.1
  */

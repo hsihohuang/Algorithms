@@ -15,15 +15,15 @@ public class Stack<T> {
 	private Node<T> top;
 	
 	/**
-     * Creates an empty Stack.
-     */
+	 * Creates an empty Stack.
+	 */
 	public Stack(){
 	}
 	
 	/**
-     * Creates a Stack and pushes an item.
-     * @param data the value to be pushed onto this stack.
-     */
+	 * Creates a Stack and pushes an item.
+	 * @param data the value to be pushed onto this stack.
+	 */
 	public Stack(T data){
 		this.push(data);
 	}

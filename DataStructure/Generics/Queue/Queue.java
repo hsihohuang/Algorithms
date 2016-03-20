@@ -15,14 +15,14 @@ public class Queue<T> {
 	private Node<T> front, rear;
 	
 	/**
-     * Creates an empty Queue.
-     */
+	 * Creates an empty Queue.
+	 */
 	public Queue(){
 	}
 	
 	/**
-     * Creates a Queue and adds the specified data into this queue.
-     */
+	 * Creates a Queue and adds the specified data into this queue.
+	 */
 	public Queue(T data){
 		this.enqueue(data);
 	}

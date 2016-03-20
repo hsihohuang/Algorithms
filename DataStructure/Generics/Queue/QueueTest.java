@@ -7,7 +7,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
- * Junit 4 test case for Queue<T>
+ * JUnit 4 test case for Queue<T>
  * @author HsiHo Huang
  * @version 1.1
  */

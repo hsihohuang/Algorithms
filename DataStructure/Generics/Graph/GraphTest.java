@@ -4,6 +4,11 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * JUnit 4 test case for Graph<T>
+ * @author HsiHo Huang
+ * @version 1.1
+ */
 public class GraphTest {
 	private Graph<String> strGraph = new Graph<String>();
 

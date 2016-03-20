@@ -4,6 +4,8 @@ import java.util.List;
 /**
  * @author HsiHo Huang
  * @version 1.1
+ *
+ * @param <T> the type of the value 
  */
 public class Vertex<T>{
 	protected T data;

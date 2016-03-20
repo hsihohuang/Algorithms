@@ -6,6 +6,11 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * JUnit 4 test case for Stack<T>
+ * @author HsiHo Huang
+ * @version 1.1
+ */
 public class StackTest {
 	private Stack<Integer> intStack;
 	private Stack<String> strStack;
