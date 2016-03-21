@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * A generic class Vertex<T>
  * @author HsiHo Huang
  * @version 1.1
  *
