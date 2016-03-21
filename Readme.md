@@ -37,4 +37,4 @@
 [Stack]:https://github.com/hsihohuang/Algorithms/tree/master/DataStructure/Generics/Stack
 [Graph]:https://github.com/hsihohuang/Algorithms/tree/master/DataStructure/Generics/Graph
 [Binary Search Tree]:https://github.com/hsihohuang/Algorithms/tree/master/DataStructure/Generics/BinarySearchTree
-[Binary Search]:https://github.com/hsihohuang/Algorithms/tree/master/Search
+[Binary Search]:https://github.com/hsihohuang/Algorithms/blob/master/Search/BinarySearch.java
