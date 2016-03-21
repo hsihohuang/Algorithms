@@ -11,18 +11,18 @@
 
 #### 完成項目:
 
+* **Data Structure :**
+	* [Binary Search Tree]
+	* [Graph]
+	* [LinkedList]
+	* [Stack]
+	* [Queue]
+
 * **Sorting :**
 	* [Quicksort]
 	* [Merge Sort]
 	* [Insertion Sort]
 	* [Bubble Sort]
-
-* **Data Structure :**
-	* [LinkedList]
-	* [Queue]
-	* [Stack]
-	* [Graph]
-	* [Binary Search Tree]
 
 * **Search :**
 	* [Binary Search]

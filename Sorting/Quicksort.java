@@ -9,6 +9,7 @@ import java.util.List;
 /**
  * @author HsiHo Huang
  * @version 1.3
+ * @see {@link <a href="http://blog.hsihohuang.info/2016/02/29/2016-2016-02-29-Quicksort/">My blog</a>}
  */
 public class Quicksort {
 	

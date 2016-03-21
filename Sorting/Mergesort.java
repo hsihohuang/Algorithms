@@ -7,6 +7,7 @@ import java.util.List;
 /**
  * @author HsiHo Huang
  * @version 1.1
+ * @see {@link <a href="http://blog.hsihohuang.info/2016/03/02/2016-2016-03-02-Mergesort/">My blog</a>}
  */
 public class Mergesort {
 	//將數列一直對半切割, 切到最小單位(單一元素), 再左右合併回去, 合併的同時做排序

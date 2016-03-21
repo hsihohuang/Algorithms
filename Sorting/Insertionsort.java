@@ -4,6 +4,7 @@ import static org.junit.Assert.assertArrayEquals;
 /**
  * @author HsiHo Huang
  * @version 1.1
+ * @see {@link <a href="http://blog.hsihohuang.info/2016/03/07/2016-2016-03-07-Insertionsort/">My blog</a>}
  */
 public class Insertionsort {	
 	/**
