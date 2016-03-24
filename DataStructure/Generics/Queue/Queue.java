@@ -33,12 +33,12 @@ public class Queue<T> {
 	 */
 	public void enqueue(T data){
 		Node<T> item = new Node<T>(data);
-		//判斷Queue是不是空的		
-		if(front != null){ //不是空的 -> 在後端進行插入
+		//判斷Queue是不是空的，若不是空的，會在後端進行插入
+		if(front != null){  
 			rear.nextNode = item;
 			rear = item; // 新節點變成最後一個
 		}else{
-			//Queue是空的
+			//若Queue是空的，在後端進行插入後，還要設定成front
 			rear = item;
 			front = rear ;
 		}
@@ -49,8 +49,8 @@ public class Queue<T> {
 	 * @return 被刪除的front資料
 	 */
 	public T dequeue(){
-		//判斷Queue是不是空的
-		if(front != null){  //不是空的 -> 在前端進行刪除
+		//判斷Queue是不是空的，若不是空的，會在前端進行刪除
+		if(front != null){ 
 			T frontData = front.data;
 			front = front.nextNode;//第二個節點變成第一個(front)
 			return frontData;
